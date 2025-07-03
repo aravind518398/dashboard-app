@@ -65,7 +65,7 @@ await sql`
     WHERE id = ${id}
   `;
   } catch(error) {
-    return { message: 'Database Error: Failed to Update Invoice.' };
+    return { message: 'Database Error: Failed to Update Invoice.', error };
   }
   
  
